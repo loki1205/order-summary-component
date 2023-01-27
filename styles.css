@@ -1,0 +1,135 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+.card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 630px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card > img{
+    width:100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height:12em;
+    object-fit: cover;
+}
+
+.title{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color:hsl(223, 47%, 23%);
+}
+
+
+.desc{
+    color:hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+}
+
+*{
+    font-family: Red Hat Display;
+}
+
+.price-tag{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.price-tag > img{
+    align-self: center;
+    width:50px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.price-tag > a{
+    align-self: center;
+    margin-right: 15px;
+    color:hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.middle-section > p{
+    align-self: center;
+    margin: 0;
+}
+
+.info{
+    padding-top:1.2rem;
+    font-weight: bold;
+    color:hsl(223, 47%, 23%);
+}
+
+.price{
+    color:var(--desaturated-blue);
+}
+
+.btn{
+    margin-left: 30px;
+    width:83%;
+    margin-top:1.5rem;
+    border:none;
+    background-color: var(--bright-blue);
+    color:white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+    opacity:0.85;
+    cursor: pointer;
+}
+
+.price-tag > a:hover{
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.cancel{
+    display: flex;
+    justify-content: center;
+    color:var(--desaturated-blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-decoration: none;
+}
